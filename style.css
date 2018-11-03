@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+
+ .ust-link {
+  overflow: hidden;
+  font-weight: bold;
+  background: rgba(54, 25, 25, 0.5);
+}
+
+ .ust-link a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+ .ust-link a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+ .ust-link .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+ .ust-link a:not(:first-child) {display: none;}
+ .ust-link a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+ .ust-link.menu {position: relative;}
+ .ust-link.menu .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+ .ust-link.menu a {
+    float: none;
+    display: block;
+	text-align :top left  
+	}
+}
